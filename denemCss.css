@@ -31,3 +31,37 @@ div{
     font-size:2pt;  -> in-cm-mm-pt-pc   
 } */
 
+/*
+SEÇİCİLER
+Birinci Seçici : Etiket Seçicimiz (a,div,p, h1...h6, span,em)
+İkinici Seçici : Class Seçicisi   (Gösteriliş şekli '.' şeklindedir)
+Üçüncü Seçici  :"id" seçicisi     (Gösterilişi # şeklindedir)
+            -> Id seçiciler bir kere kullanılır.
+            -> Id ile genel tanımlama yapıp, classla özel tanımlamalar yapabilirsin.
+            <h1 id="baslik" class="baslik"> gibii...
+
+Evrensel Seçici : * Şeklindedir. Tüm etiketleri(TAG'lari seçicektir)
+*/
+/* Seçiciler ve etki alanları
+h1,h2{
+    background-color: orange;
+    color:#FFFFFF;
+}
+div{
+     background-color: darkgoldenrod;
+     width:500px;
+     height: 300px;
+} */
+h2{
+    background-color: orange;
+    color:black;
+}
+.baslik{
+    background-color: blue;
+    color: navajowhite;
+}
+
+#baslik{
+    background-color: yellowgreen;
+    color: black;
+}
