@@ -37,6 +37,20 @@
             font-size: 46px;
         }*/
         /*Before-After Elemanlarının Kullanımı */
+         #icerik{
+             width: 600px;
+             height: 170px;
+             padding:20px;
+             border:1px solid darkblue;
+             margin: 0; /*div'i tam ortada göstermek için*/
+         }
+         #icerik:before{
+             content: "Buraya Yazı Geliyor..";
+             color: mediumvioletred;
+         }
+         #icerik::after{
+             content: "Buraya Yazı Geliyor";
+         }
         </style>
     </head>
     <body>
@@ -59,11 +73,10 @@
         <li><a href="#">Link 6</a></li>
       </ul>
       <h1>BURASI BAŞLIK ALANI</h1>-->
-      <p>
-          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus cursus justo vitae urna tincidunt, vel sagittis magna rhoncus. Donec at risus vitae mi tempus mollis. Pellentesque luctus lacus eget porttitor dictum. In euismod lacus ut lorem finibus, a mollis ex consequat. Sed a leo ac ante sodales maximus a et nibh. Suspendisse ultricies tincidunt eros nec luctus. Proin tincidunt ante vitae libero condimentum sollicitudin. Ut ac posuere risus. Vivamus nisi erat, lobortis eu sollicitudin ut, finibus et elit. Aliquam erat volutpat. Suspendisse est enim, eleifend nec dictum sed, mollis in felis. Donec dapibus odio mi, a rhoncus elit accumsan vitae.
-      </p>
-      <div>
+   
+      <div id="icerik">          
           Nulla facilisi. Aliquam varius, lorem vel efficitur lobortis, libero mauris convallis diam, id dictum risus tellus quis orci. Suspendisse mattis lacinia risus, in porttitor ante consequat a. Maecenas mauris ante, consequat at sagittis a, rutrum non ex. Vivamus a lorem at dui ultrices laoreet. Nulla suscipit leo et sagittis tristique. Maecenas nulla est, venenatis non fermentum eget, commodo quis sapien. Vivamus vulputate id mauris a ultricies. Mauris luctus enim at neque facilisis, sed ullamcorper enim vestibulum. Quisque eget tempor tellus. Duis id neque tellus. Nunc commodo ante a leo gravida pulvinar.
       </div>
+
     </body>
 </html>
